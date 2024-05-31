@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="imagenes/termometro.png" />
+    <title> Conversión de temperaturas</title>
+  </head>
+
+  <body>
+    <div class="contenedor-principal">
+      <div class="title">
+      <h1> CONVERSOR DE TEMPERATURAS </h1>
+      </div>
+      <!-- Ingreso de la temperatura a convertir con su unidad -->
+      <div class="contenedor-interno">
+        <div class="contenedor">
+          <label for="temperaturaInicial"> Ingrese la temperatura a convertir: </label>
+          <input 
+          id="temperaturaInicial" 
+          type="number" 
+          value="23" 
+          step="0.1" />
+          <select  id="unidadTemperatura" name="select">
+            <option id="celsius" value="celsius" selected> Celsius °C</option>
+            <option id="fahrenheit"value="fahrenheit"> Fahrenheit °F</option>
+            <option id="kelvin "value="kelvin"> Kelvin K</option>
+          </select>
+        </div>
+        <!-- Conversión de temperatura, el código se añade por js-->
+        <h2> Su conversión:</h2>
+        <div class="contenedor-conversion">
+          <div id="primera-conversion">
+
+          </div>
+          <div id="segunda-conversion">
+
+          </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
